@@ -259,7 +259,8 @@ export default class Transfer {
 
     return new Promise((resolve, reject) => {
       // Load the required fonts using webfont.
-      WebFont.load({
+      WebFont.load(
+/*         {
         google: {
           families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono'],
           urls: ['//fonts.googleapis.com/css?family=Droid Sans',
@@ -272,7 +273,8 @@ export default class Transfer {
           console.warn('Could not load webfonts')
           resolve(false)
         }
-      })
+      } */
+    )
     })
   }
 }
